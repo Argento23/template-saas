@@ -2,6 +2,8 @@ import { Groq } from 'groq-sdk';
 import { NextResponse } from 'next/server';
 import { UNIVERSAL_AI_CONFIG } from '@/data/ai-config';
 
+export const dynamic = 'force-dynamic';
+
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY,
 });
