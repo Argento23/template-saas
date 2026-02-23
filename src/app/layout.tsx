@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
+import VapiWidget from "@/components/VapiWidget";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,23 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <Script
-          src="https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/vapi-widget.js"
-          strategy="afterInteractive"
-          onLoad={() => {
-            // @ts-ignore
-            window.vapiSDK.run({
-              apiKey: "1858a4ab-1eb6-4ca3-99df-d1da31150892", // Actual Public Key
-              assistant: "d446be03-dfb6-4de6-b83b-9b904af74829", // Alex
-              config: {
-                position: "bottom-left", // Left to avoid overlap with existing chat
-                title: "Alex - AI Consultant",
-                subtitle: "Neurova Agencia AI",
-                color: "#2563eb"
-              },
-            });
-          }}
-        />
+        <VapiWidget />
       </body>
     </html>
   );
