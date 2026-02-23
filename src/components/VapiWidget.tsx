@@ -12,7 +12,7 @@ export default function VapiWidget() {
                 if (window.vapiSDK) {
                     // @ts-ignore
                     window.vapiSDK.run({
-                        apiKey: "996ce0cb-fff4-47a2-a3e9-01e20a4f4789",
+                        apiKey: "3fe2e389-3dc5-4071-bfb5-c91a511af385",
                         assistant: "d446be03-dfb6-4de6-b83b-9b904af74829", // Alex Candidate
                         config: {
                             position: "bottom-left",
