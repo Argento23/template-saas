@@ -13,7 +13,7 @@ export default function VapiWidget() {
                     // @ts-ignore
                     window.vapiSDK.run({
                         apiKey: "996ce0cb-fff4-47a2-a3e9-01e20a4f4789",
-                        assistant: "c500ab0f-ea72-47fd-b66f-e2caf54a0ebf", // Stefan New
+                        assistant: "d446be03-dfb6-4de6-b83b-9b904af74829", // Alex Candidate
                         config: {
                             position: "bottom-left",
                             title: "Alex - AI Consultant",
