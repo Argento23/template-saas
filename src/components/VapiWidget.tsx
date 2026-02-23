@@ -5,7 +5,7 @@ import Script from "next/script";
 export default function VapiWidget() {
     return (
         <Script
-            src="https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/vapi-widget.js"
+            src="https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js"
             strategy="afterInteractive"
             onLoad={() => {
                 // @ts-ignore
