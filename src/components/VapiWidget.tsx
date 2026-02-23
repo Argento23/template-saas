@@ -12,8 +12,8 @@ export default function VapiWidget() {
                 if (window.vapiSDK) {
                     // @ts-ignore
                     window.vapiSDK.run({
-                        apiKey: "pub-1858a4ab-1eb6-4ca3-99df-d1da31150892",
-                        assistant: "d446be03-dfb6-4de6-b83b-9b904af74829",
+                        apiKey: "996ce0cb-fff4-47a2-a3e9-01e20a4f4789",
+                        assistant: "c500ab0f-ea72-47fd-b66f-e2caf54a0ebf", // Stefan New
                         config: {
                             position: "bottom-left",
                             title: "Alex - AI Consultant",

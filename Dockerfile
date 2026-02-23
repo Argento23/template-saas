@@ -15,6 +15,13 @@ COPY . .
 # Disable Next.js telemetry
 ENV NEXT_TELEMETRY_DISABLED 1
 
+# Add Build Arguments for Environment Variables
+ARG GROQ_API_KEY
+ARG NEXT_PUBLIC_SITE_URL
+
+ENV GROQ_API_KEY=$GROQ_API_KEY
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
+
 # Build the project
 RUN npm run build
 
